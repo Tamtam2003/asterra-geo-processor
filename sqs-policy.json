@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "sqs:SendMessage",
+      "Resource": "REPLACE_ME_QARN",
+      "Condition": {
+        "ArnEquals": {
+          "aws:SourceArn": "REPLACE_ME_BUCKET_ARN"
+        }
+      }
+    }
+  ]
+}
